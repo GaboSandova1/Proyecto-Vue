@@ -18,13 +18,12 @@
 <style scoped>
   
   h1 {
-    color: #fff;
+    color: #333;
   }
   
   p{
-    color: #fff;
+    color: #333;
     font-size: 2rem;
-    text-align: center;
     margin: 20px;
   }
   
