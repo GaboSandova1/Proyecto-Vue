@@ -1,12 +1,12 @@
 <template>
-<Contador></Contador>
-<listaDeTreas></listaDeTreas>
+  <MainView></MainView>  
+
 </template>
 
 
 <script setup>
-import Contador from './components/Contador.vue';
-import listaDeTreas from './components/listaDeTreas.vue';
+
+  import MainView from './views/MainView.vue';
 
 </script>
 
