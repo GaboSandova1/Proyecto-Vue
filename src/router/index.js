@@ -11,17 +11,22 @@ const router = createRouter({
     {
       path: '/Contador',
       name: 'Contador',
-      component: () => import('../components/Contador.vue'),
+      component: () => import('../models/contador/components/Contador.vue'),
     },
     {
       path: '/listaDeTareas',
       name: 'lista-de-tareas',
-      component: () => import('../components/listaDeTareas.vue'),
+      component: () => import('../models/ListaDeTareas/components/listaDeTareas.vue'),
     },
     {
       path: '/sideBar',
       name: 'SideBar',
       component: () => import('../components/sideBar.vue'),
+    },
+    {
+      path: '/registrar',
+      name: 'registrar',
+      component: () => import('../models/registro/views/RegistrarView.vue'),
     },
   ],
 })

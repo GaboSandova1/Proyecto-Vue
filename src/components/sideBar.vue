@@ -11,6 +11,9 @@
             <li>
                 <router-link to="/listaDeTareas">Tareas</router-link>
             </li>
+            <li>
+                <router-link to="/registrar">Registrar</router-link>
+            </li>
         </ul>
     </div>
 </template>
