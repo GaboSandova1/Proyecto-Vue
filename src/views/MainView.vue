@@ -1,4 +1,5 @@
 <template>
+    <Header></Header>
     <div class="container">
         <sideBar></sideBar>
         <div class="content">
@@ -10,6 +11,7 @@
 
 <script setup>
     import sideBar from '../components/sideBar.vue';
+    import Header from '../components/header.vue';
 
 </script>
 
@@ -17,12 +19,15 @@
     .container {
         display: flex;
         height: auto;
-        /* background-color: #f1f1f1; */
+        background-color: #f1f1f1;
     }
 
     .content {
         flex: 1;
         padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
     }
 

@@ -1,8 +1,8 @@
 <template>
     <div class="sidebar">
         <h2>Bienvenido</h2>
-        <h3>Nombre: {{ nombre }}</h3>
-        <h3>Email: {{ email }}</h3>
+        <h3>Nombre: {{ registrarStore.nombre }}</h3>
+        <h3>Email: {{ registrarStore.email }}</h3>
         <h2>Barra lateral</h2>
         <ul>
             <li>
@@ -23,17 +23,10 @@
 
 <script setup>
     import { useRegistrarStore } from '@/models/registro/stores/registrarStore';
-    import { ref, watch } from 'vue';
 
     const registrarStore = useRegistrarStore();
-    const nombre = ref(registrarStore.nombre.value);
-    const email = ref(registrarStore.email.value);
-    watch(() => registrarStore.nombre, (newValue) => {
-        nombre.value = newValue;
-    });
-    watch(() => registrarStore.email, (newValue) => {
-        email.value = newValue;
-    });
+
+    
 
 
 </script>
@@ -44,7 +37,7 @@
         padding: 20px;
         background-color: #333;
         color: #fff;
-        height: 100vh;
+        height: 94.3vh;
     }
     li {
         list-style: none;
