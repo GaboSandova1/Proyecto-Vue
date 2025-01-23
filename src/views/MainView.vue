@@ -1,8 +1,10 @@
 <template>
-    <Header></Header>
+    <Header :mensaje="texto"></Header>
     <div class="container">
         <sideBar></sideBar>
         <div class="content">
+            <input type="text" v-model="texto" placeholder="Escribe algo">
+            {{ texto }}
             <Router-view></Router-view>
 
         </div>
@@ -11,7 +13,9 @@
 
 <script setup>
     import sideBar from '../components/sideBar.vue';
-    import Header from '../components/header.vue';
+    import Header from '../components/Header.vue';
+    import { ref } from 'vue';
+    const texto = ref('');
 
 </script>
 

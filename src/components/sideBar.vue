@@ -37,7 +37,7 @@
         padding: 20px;
         background-color: #333;
         color: #fff;
-        height: 94.3vh;
+        height: 86.4vh;
     }
     li {
         list-style: none;
