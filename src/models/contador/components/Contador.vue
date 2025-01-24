@@ -1,18 +1,19 @@
 <template>
-    <h1>Bienvenido al contador:</h1>
-    <p>{{ contador }}</p>
-    <button @click="incrementar">Incrementar</button>
-    <button @click="decrementar">Decrementar</button>
-    
+  <h1>Bienvenido al contador:</h1>
+  <!-- Muestra el valor actual del contador -->
+  <p>{{ contador }}</p>
+  <!-- Botones para incrementar o decrementar el contador -->
+  <button @click="incrementar">Incrementar</button>
+  <button @click="decrementar">Decrementar</button>
 </template>
-  
-  
+
 <script setup>
   import { ref } from 'vue';
+  // Definición de la variable reactiva 'contador' inicializada en 0
   const contador = ref(0);
+  // Función para incrementar y decrementar el valor del contador
   const incrementar = () => contador.value++;
   const decrementar = () => contador.value--;
-  
 </script>
   
 <style scoped>

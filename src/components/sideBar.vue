@@ -1,12 +1,16 @@
 <template>
     <div class="sidebar">
+        <!-- Sidebar header -->
         <h2>Bienvenido</h2>
+        <!-- Display user name from store -->
         <h3>Nombre: {{ registrarStore.nombre }}</h3>
+        <!-- Display user email from store -->
         <h3>Email: {{ registrarStore.email }}</h3>
         <h2>Barra lateral</h2>
+        <!-- Navigation links -->
         <ul>
             <li>
-                <router-link to="/Home">Inicio</router-link>
+                <router-link to="/Inicio">Inicio</router-link>
             </li>
             <li>
                 <router-link to="/Contador">Contador</router-link>
@@ -17,18 +21,19 @@
             <li>
                 <router-link to="/registrar">Registrar</router-link>
             </li>
+            <li>
+                <router-link to="/calcular">Calcular</router-link>
+            </li>
         </ul>
     </div>
 </template>
 
 <script setup>
+    // Import the store for user registration data
     import { useRegistrarStore } from '@/models/registro/stores/registrarStore';
 
+    // Initialize the store
     const registrarStore = useRegistrarStore();
-
-    
-
-
 </script>
 
 <style scoped>

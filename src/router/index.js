@@ -8,6 +8,14 @@ const router = createRouter({
     //   name: 'home',
     //   component: HomeView,
     // },
+    
+    // Rutas de los modelos
+    
+    {
+      path: '/Inicio',
+      name: 'Inicio',
+      component: () => import('../models/inicio/components/Inicio.vue'),
+    },
     {
       path: '/Contador',
       name: 'Contador',
@@ -28,7 +36,12 @@ const router = createRouter({
       name: 'registrar',
       component: () => import('../models/registro/views/RegistrarView.vue'),
     },
-  ],
+    {
+      path: '/calcular',
+      name: 'calcular',
+      component: () => import('../models/calcular/views/CalcularView.vue'),
+    },
+  ], 
 })
 
 export default router
